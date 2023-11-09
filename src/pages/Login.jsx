@@ -21,7 +21,7 @@ const Login = () => {
           onClick={signIn}
           className="button"
         >
-          Sign In With Google
+          Sign in with Google
         </button>
       </div>
     </Layout>
