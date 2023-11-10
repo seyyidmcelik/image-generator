@@ -16,7 +16,7 @@ const Login = () => {
   return (
     <Layout>
       <div className='login-page'>
-        <h1 className="text-5xl mb-5">Login Here!</h1>
+        <h1 className="text-4xl mb-5">Login Here!</h1>
         <button
           onClick={signIn}
           className="button"

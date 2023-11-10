@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body,#root{
+height: 100dvh;
+}
+
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -58,7 +63,7 @@ header .menu .link {
 .login-page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 64px);
+  height: calc(100% - 64px);
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -113,7 +118,6 @@ header .menu .link {
   max-width: 1000px;
   border-radius: 20px 40px;
   margin: 20px auto;
-  padding: 10px;
   background-color: transparent;
 }
 

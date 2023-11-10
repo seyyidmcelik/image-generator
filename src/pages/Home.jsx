@@ -8,7 +8,7 @@ import Layout from "../layout";
 const Home = () => {
   const [allPost, setAllPost] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [search, setSearch] = useState(null);
+  const [search, setSearch] = useState('');
   const [searchResult, setSearchResult] = useState([]);
   const postRef = collection(db, "post");
 
@@ -42,8 +42,8 @@ const Home = () => {
 
   return (
     <Layout>
-      <section className="max-w-7xl  d-flex justify-center items-center flex-col mx-auto mt-10">
-        <h1 className="font-extrabold text-[40px]">
+      <section className="max-w-7xl d-flex justify-center items-center flex-col mx-auto mt-10 sm:px-0 px-6">
+        <h1 className="font-extrabold sm:text-[40px] text-[27px]">
           The Community <span>Showcase</span>
         </h1>
         <p className="mt-2 text-[15px] max-w-[500px]">
@@ -67,8 +67,8 @@ const Home = () => {
           ) : (
             <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
               {search && searchResult
-                ? searchResult.map((post) => <Post post={post} />)
-                : allPost && allPost.map((post) => <Post post={post} />)}
+                ? searchResult.map((post) => <Post key={post.id} post={post} />)
+                : allPost && allPost.map((post) => <Post key={post.id} post={post} />)}
             </div>
           )}
         </div>

@@ -75,15 +75,15 @@ const ImageGenerationForm = () => {
 
   return (
     <Layout>
-      <div className="container imageGen al-c">
-        <h1 className="font-extrabold text-[40px]">
+      <div className="container imageGen al-c sm:px-0 px-6">
+        <h1 className="font-extrabold sm:text-[40px] text-[27px]">
           Stable <span>Diffusion</span>
         </h1>
         <p className="mt-2 text-[15px] max-w-[500px]">
           Explain with clean words for whatever you want image.
-          <pre className="opacity-50">
+          <span className="block opacity-50">
             Example: `A yellow motorcycle on the street`
-          </pre>
+          </span>
         </p>
         <form className="generate-form mt-3" onSubmit={handleSubmit}>
           <input
