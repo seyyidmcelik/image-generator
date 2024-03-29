@@ -3,6 +3,8 @@
 
 Full-stack React and Firebase appliaction based on AI
 
+### Visit and explore the [smc-image-generator](https://smc-image-generator.netlify.app/)
+
 
 ## Tools and Technologies
 
